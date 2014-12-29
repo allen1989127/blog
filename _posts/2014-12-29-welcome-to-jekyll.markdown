@@ -22,6 +22,7 @@ print_hi('Tom')
 void hello()
 {
     printf("hello\n");
+    // print
 }
 {% endhighlight %}
 
