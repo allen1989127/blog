@@ -18,7 +18,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-{% hightlight c %}
+{% hightlight java %}
 void hello()
 {
     printf("hello\n");
