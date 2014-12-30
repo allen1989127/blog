@@ -11,5 +11,5 @@ baseurl: /blog # the subpath of your site, e.g. /blog/
 # Build settings
 markdown: kramdown
 
-paginate: 5
+paginate: 1
 paginate_path: "page:num"
