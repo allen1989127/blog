@@ -9,6 +9,7 @@ var dataStr = '{ {% for cat in site.categories %}{% if cat[0] != site.categories
         curTag = $.query.get("cat"),
         archieves = data[curTag];
 
+alert("hello");
 for (var i = 0; i < archieves.length; i++) {
     link = document.createElement("a");
     link.class = "post-link";
