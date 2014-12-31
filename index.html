@@ -12,10 +12,11 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          {% for category in post.categories %}
-          {{ category }}
-          {% endfor %}
+            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {% for category in post.categories %}
+            <font size="3">{{ category }}</font>
+            {% endfor %}
+            </p>
         </h2>
       </li>
     {% endfor %}
