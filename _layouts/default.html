@@ -10,7 +10,7 @@
     <div class="page-content">
         <div class="page-list">
         {% for category in site.categories %}
-            <p>{{ category | first }}<span>({{ category | last | size }})</span></p>
+        <a class="page-link" href="{{ 'show-category-list.html?cat=' | prepend: site.baseurl | append: category[0] }}">{{ category | first }}({{ category | last | size }})</a>
         {% endfor %}
         </div>
 
