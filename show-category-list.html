@@ -21,6 +21,10 @@ var ul = document.getElementById("list");
 for (var i = 0; i < archieves.length; i++) {
     li = document.createElement("li");
 
+    span = document.createElement("span");
+    span.setAttribute("class", "post-meta");
+    span.innerHTML = archieves[i]["date"];
+
     h2 = document.createElement("h2");
 
     link = document.createElement("a");
@@ -29,6 +33,7 @@ for (var i = 0; i < archieves.length; i++) {
     link.innerHTML = archieves[i]["title"];
 
     h2.appendChild(link);
+    li.appendChild(span);
     li.appendChild(h2);
     ul.appendChild(li);
 }
