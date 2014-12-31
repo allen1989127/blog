@@ -9,11 +9,7 @@ var data = { {% for cat in site.categories %}{% if cat[0] != site.categories.fir
 var curTag = $.query.get("cat");
 var archieves = data[curTag];
 
-var div = document.createElement("div");
-div.setAttribute("class", "home");
-
-var ul = document.createElement("ul");
-ul.setAttribute("class", "post-list");
+var ul = document.getElementById("list");
 
 for (var i = 0; i < archieves.length; i++) {
     li = document.createElement("li");
@@ -29,8 +25,13 @@ for (var i = 0; i < archieves.length; i++) {
     li.appendChild(h2);
     ul.appendChild(li);
 }
-div.appendChild(ul);
-
-document.body.appendChild(div);
+document.body.appendChild(ul);
 
 </script>
+
+<div class="home">
+    <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list" id="list">
+    </ul>
+</div>
