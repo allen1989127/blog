@@ -7,13 +7,13 @@
 
     {% include header.html %}
 
-    <div class="page-list">
-    {% for category in site.categories %}
-        <p>{{ category | first }}<span>({{ category | last | size }})</span></p>
-    {% endfor %}
-    </div>
-
     <div class="page-content">
+        <div class="page-list">
+        {% for category in site.categories %}
+            <p>{{ category | first }}<span>({{ category | last | size }})</span></p>
+        {% endfor %}
+        </div>
+
       <div class="wrapper">
         {{ content }}
       </div>
