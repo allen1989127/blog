@@ -14,7 +14,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           {% for category in post.categories %}
-          <h2>{{ category }}</h2>
+          {{ category }}
           {% endfor %}
         </h2>
       </li>
