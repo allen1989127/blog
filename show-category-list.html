@@ -10,6 +10,7 @@ var curTag = $.query.get("cat");
 var archieves = data[curTag];
 
 var div = document.createElement("div");
+div.class = "home";
 for (var i = 0; i < archieves.length; i++) {
     link = document.createElement("a");
     link.class = "post-link";
