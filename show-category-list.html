@@ -11,14 +11,26 @@ var archieves = data[curTag];
 
 var div = document.createElement("div");
 div.setAttribute("class", "home");
+
+var ul = document.createElement("ul");
+ul.setAttribute("class", "post-list");
+
 for (var i = 0; i < archieves.length; i++) {
+    li = document.createElement("li");
+
+    h2 = document.createElement("h2");
+
     link = document.createElement("a");
     link.setAttribute("class", "post-link");
     link.href = archieves[i]["url"];
     link.innerHTML = archieves[i]["title"];
 
-    div.appendChild(link);
+    h2.appendChild(link);
+    li.appendChild(h2);
+    ul.appendChild(li);
 }
+div.appendChild(ul);
+
 document.body.appendChild(div);
 
 </script>
