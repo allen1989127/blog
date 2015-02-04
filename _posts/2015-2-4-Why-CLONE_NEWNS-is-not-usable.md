@@ -80,6 +80,7 @@ PID的隔离是没有问题的，执行下面的代码编译上面的代码，�
 功夫不负有心人啊，终于在unshare的man doc内找到了这么一段话
 
 > mount namespace
+
 >> Mounting  and  unmounting  filesystems  will  not  affect  the  rest  of  the  system  (CLONE_NEWNS  flag),  except  for filesystems which are explicitly marked as shared (with mount --make-shared; see /proc/self/mountinfo for the shared flags).
         
 >> It's recommended to use mount --make-rprivate or mount --make-rslave after unshare --mount to make sure that mountpoints in the new namespace are really unshared from the parental namespace.
