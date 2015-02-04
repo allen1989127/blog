@@ -2,6 +2,7 @@
 layout: post
 title: "Why CLONE_NEWNS is not usable"
 date: 2015-2-4 23:24:00
+categories: [Linux]
 ---
 
 通过docker了解到了container技术，然后又通过container技术了解到了namespace、cgroup等技术，果然技术和技术之间是相互联系的。
