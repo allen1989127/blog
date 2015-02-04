@@ -6,7 +6,7 @@ date: 2015-2-4 23:24:00
 
 通过docker了解到了container技术，然后又通过container技术了解到了namespace、cgroup等技术，果然技术和技术之间是相互联系的。
 
-额。。。好想离题了，收回来。
+额。。。好像离题了，收回来。
 
 首先，为啥去玩namespace，为了了解一下隔离技术看看能不能弄点神奇的东东出来，哈哈。
 
@@ -79,10 +79,10 @@ PID的隔离是没有问题的，执行下面的代码编译上面的代码，�
 
 功夫不负有心人啊，终于在unshare的man doc内找到了这么一段话
 
-    mount namespace
-        Mounting  and  unmounting  filesystems  will  not  affect  the  rest  of  the  system  (CLONE_NEWNS  flag),  except  for filesystems which are explicitly marked as shared (with mount --make-shared; see /proc/self/mountinfo for the shared flags).
+> mount namespace
+>> Mounting  and  unmounting  filesystems  will  not  affect  the  rest  of  the  system  (CLONE_NEWNS  flag),  except  for filesystems which are explicitly marked as shared (with mount --make-shared; see /proc/self/mountinfo for the shared flags).
         
-        It's recommended to use mount --make-rprivate or mount --make-rslave after unshare --mount to make sure that mountpoints in the new namespace are really unshared from the parental namespace.
+>> It's recommended to use mount --make-rprivate or mount --make-rslave after unshare --mount to make sure that mountpoints in the new namespace are really unshared from the parental namespace.
         
 看到了吗？except  for filesystems which are explicitly marked as shared，日他个蛋的，赶紧查了一下/proc/self/mountinfo，发现根目录就是shared，接下去就知道该怎么办了
 
