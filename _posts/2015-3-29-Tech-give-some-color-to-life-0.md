@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "技术填充生活之该死的酒店网络登陆系统"
-date: 2015-3-29 8:00:00
-categories: [Linux] [Network] [Python] [技术改变生活]
+date: 2015-3-29 20:00:00
+categories: [Linux, Network, Python, 技术改变生活]
 ---
 
 在写这篇博客的开头，首先丫的骂一下公司，第二次TNND把爷扔到银商这边过来了，而且每次都是新项目，一扔就扔一大段时间，还能不能好好的干活了。
