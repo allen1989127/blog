@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Make tech color life(0)"
+title: "技术填充生活之该死的酒店网络登陆系统"
 date: 2015-3-29 20:00:00
-categories: [Linux, Network, Python]
+categories: [Linux, Network, Python, 技术填充生活]
 ---
-
-#技术填充生活之该死的酒店网络登陆系统
 
 在写这篇博客的开头，首先丫的骂一下公司，第二次TNND把爷扔到银商这边过来了，而且每次都是新项目，一扔就扔一大段时间，还能不能好好的干活了。
 
@@ -35,7 +33,7 @@ categories: [Linux, Network, Python]
 
 给几个前提，在进行实际登陆的动作的时候，我已经在浏览器的地址栏上知道验证web服务器的ip为192.168.0.216，还有我的无线网卡设备名为wlp3s0，接下去的事情就比较简单了，在终端中输入下面的命令：
 
-{% highlight shell %}
+{% highlight bash %}
 sudo tcpdump -i wlp3s0 host 192.168.0.216 -A > tcpdump
 {% endhighlight %}
 
@@ -171,7 +169,7 @@ while 1:
 
 流程知道了，一切都很简单了，这里再简单介绍一下怎么去简单的重连vpn，我使用的是linux的NetworkManager进行网络设备的管理，对应kde有相应的插件，也有对应的命令行客户端nmcli可以进行操作，我的vpn是在kde环境下通过GUI已经配置好了，然后通过：
 
-{% highlight shell %}
+{% highlight bash %}
 nmcli c up yunti
 nmcli c down yunti
 {% endhighlight %}
