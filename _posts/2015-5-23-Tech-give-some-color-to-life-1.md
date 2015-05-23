@@ -21,7 +21,7 @@ categories: [Network, Ssh, 技术填充生活]
 
 对于所描述的这个问题，利用下图表述应该更清晰一点：
 
-![problem](2015-5-23-Tech-give-some-color-to-life-1-problem.png)
+![problem](images/2015-5-23-Tech-give-some-color-to-life-1-problem.png)
 
 怎么让computer A连接到computer B呢？
 
@@ -37,7 +37,7 @@ categories: [Network, Ssh, 技术填充生活]
 
 先通过一个图来说明一下这个方法吧，请看下图：
 
-![solve-0](2015-5-23-Tech-give-some-color-to-life-1-solve-0.png)
+![solve-0](images/2015-5-23-Tech-give-some-color-to-life-1-solve-0.png)
 
 在computer B开启了一个WEB服务，即开启了80端口，这个时候通过设置路由器的转发规则，将发送到路由器公网地址80端口的数据转发到computer B的内网IP中即可。
 
@@ -61,7 +61,7 @@ categories: [Network, Ssh, 技术填充生活]
 
 看了原理感觉绕吗？其实也是一个简单的原理，只不过是利用了一个逆向思维，让映射的端口放到了另外一个网络中，也不得不说这个方法的巧妙性阿，特别是vps服务现在大量流行的情况下，这个方法不失为一种吊炸天的方法，不单单可以映射你的家庭网络内网机器服务，就算在公司的电脑希望映射出来也难不倒你了吧。还是通过图来稍微再瞧一下这个巧妙的方法吧：
 
-![solve-1](2015-5-23-Tech-give-some-color-to-life-1-solve-1.png)
+![solve-1](images/2015-5-23-Tech-give-some-color-to-life-1-solve-1.png)
 
 通过箭头所在的直线，即产生了一条隧道，而且该隧道是一个应用层面上的隧道，无需设置路由，更方便。当然，好像貌似听说会产生一些安全问题，要不要用，要怎么用就看个人需要了。
 
